@@ -1,0 +1,147 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.titulo{
+    background-color: rgb(96, 192, 96);
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+section {
+    width: 50%;
+    height: 100vh;
+}
+
+.formulario{
+    border: none;
+    height: 300px;
+    margin-left: 20px;
+}
+
+.form-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-contenedor>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    padding: 50px;
+    border: solid 1px black;
+    border-radius: 8px;
+    
+}
+.form-contenedor>form>input{
+    font-size: 20px;
+    width: 200px;
+}
+
+
+
+table {
+    border: solid 1px rgb(17, 17, 71);
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    padding: 10px;
+    background: rgb(226,226,226);
+    background: linear-gradient(90deg, rgba(226,226,226,1) 0%, rgba(205,205,212,0.8687850140056023) 75%, rgba(152,152,152,1) 100%);
+}
+
+
+table thead tr {
+    background-color: rgb(186, 184, 184);
+}
+table thead tr th{
+    padding: 10px;
+    text-align: center;
+}
+td {
+    padding: 15px;
+    border: 1px solid black
+}
+
+
+@media (max-width: 768px) {
+    body{
+        background-color: rgb(206, 112, 24);}
+        
+
+        main {
+            display: inline-block;
+            /* font-size: 25px; */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-contenedor{
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;} 
+
+            .formulario{
+                padding-top: 50px;
+                height: 200px;
+                border: none;
+            }
+            .titulo{
+                position: relative;
+            }
+            table{
+                font-size: 20px
+             };
+        }
+
+        @media (max-width: 576px) {
+            body{
+                background-color: rgb(150, 115, 182);}
+        
+                main {
+                    display: inline-block;
+                    /* font-size: 25px; */
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                }
+                .form-contenedor{
+                    display: inline-block;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;} 
+        
+                    .formulario{
+                        padding-top: 50px;
+                        height: 200px;
+                        border: none;
+                    }
+
+               /*  th{
+                    display: block;
+                }
+                td{
+                    display: block;
+                } */
+                 table{
+                    font-size: 15px
+                 };
+                }
